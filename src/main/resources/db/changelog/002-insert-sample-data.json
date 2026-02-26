@@ -1,0 +1,55 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "id": "002",
+        "author": "bancx",
+        "changes": [
+          {
+            "insert": {
+              "columns": [
+                {
+                  "column": {
+                    "name": "loan_id",
+                    "value": 1
+                  }
+                },
+                {
+                  "column": {
+                    "name": "status",
+                    "value": "ACTIVE"
+                  }
+                },
+                {
+                  "column": {
+                    "name": "loan_amount",
+                    "value": 2500000
+                  }
+                },
+                {
+                  "column": {
+                    "name": "term_in_months",
+                    "value": 240
+                  }
+                },
+                {
+                  "column": {
+                    "name": "total_payment_collected",
+                    "value": 0
+                  }
+                },
+                {
+                  "column": {
+                    "name": "balance_amount",
+                    "value": 2500000
+                  }
+                }
+              ],
+              "tableName": "loans"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

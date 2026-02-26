@@ -1,0 +1,14 @@
+{
+  "databaseChangeLog": [
+    {
+      "include": {
+        "file": "db/changelog/001-create-tables.json"
+      }
+    },
+    {
+      "include": {
+        "file": "db/changelog/002-insert-sample-data.json"
+      }
+    }
+  ]
+}
