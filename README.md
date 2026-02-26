@@ -12,16 +12,16 @@ The LNP System is a Spring Boot application designed to manage loan and payment 
    - Ensure you have Java 17 or higher installed.
    - Install Maven (minimum version 3.6.0).
 
-2. **Run the Application:**
-
-   ```bash
-   mvn spring-boot:run
-   ```
-
-3. **If you face issues with step 2. The first Build the Application using below command and then try step 2 again:**
+2. **Build the Application:**
 
    ```bash
    mvn clean install
+   ```
+
+3. **Run the Application:**
+
+   ```bash
+   mvn spring-boot:run
    ```
 
 The application will start on the default port `8080`. You can access it at `http://localhost:8080`.

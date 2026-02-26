@@ -66,7 +66,7 @@ public class LoanController {
 
         return switch (response) {
             case GetLoanDetailsDto r -> ResponseEntity.ok(ResponseDto.success(r));
-            case ApplicationConstants.NOT_FOUND -> ResponseEntity.status(HttpStatus.NOT_FOUND)
+            case String s -> ResponseEntity.status(HttpStatus.NOT_FOUND)
                     .body(ResponseDto.nonFound("No records found for provided loan ID"));
             case null -> ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ResponseDto.failed());
             default -> ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ResponseDto.failed());
